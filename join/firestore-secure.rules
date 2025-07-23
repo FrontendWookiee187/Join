@@ -1,0 +1,31 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Benutzer können nur ihre eigenen Daten lesen/schreiben
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Tasks - nur authentifizierte Benutzer
+    match /tasks/{taskId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Contacts - nur authentifizierte Benutzer
+    match /contacts/{contactId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Board data - nur authentifizierte Benutzer
+    match /boards/{boardId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Fallback: Alle anderen Dokumente nur für authentifizierte Benutzer
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

@@ -14,14 +14,14 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }), 
 
     provideFirebaseApp(() => initializeApp({ 
-      projectId: "join-project-a437a", 
-      appId: "1:848614889298:web:c448e996f46de06252cc8b", 
-      databaseURL: "https://join-project-a437a-default-rtdb.europe-west1.firebasedatabase.app", 
-      storageBucket: "join-project-a437a.firebasestorage.app", 
-      apiKey: "AIzaSyAMajQkymTiHB35Z5gmSzy8ezCv432D87A", 
-      authDomain: "join-project-a437a.firebaseapp.com", 
-      messagingSenderId: "848614889298", 
-      measurementId: "G-X4R986D1CT" 
+      projectId: "join-f06a0", 
+      appId: "1:405201082703:web:6401aaf7aaebf9baafcd3a", 
+      databaseURL: "https://join-f06a0-default-rtdb.europe-west1.firebasedatabase.app", 
+      storageBucket: "join-f06a0.firebasestorage.app", 
+      apiKey: "AIzaSyDM3S3CiDFR2zjKXUfaGprWZlGJtgzR1_E", 
+      authDomain: "join-f06a0.firebaseapp.com", 
+      messagingSenderId: "405201082703", 
+      measurementId: "G-MEASUREMENT_ID" 
     })), 
 
     provideFirestore(() => getFirestore())

@@ -1,21 +1,21 @@
 // Template for environment configuration - DO NOT COMMIT REAL VALUES
 export const firebaseConfig = {
 
-  apiKey: "AIzaSyAMajQkymTiHB35Z5gmSzy8ezCv432D87A",
+  apiKey: "AIzaSyDM3S3CiDFR2zjKXUfaGprWZlGJtgzR1_E",
 
-  authDomain: "join-project-a437a.firebaseapp.com",
+  authDomain: "join-f06a0.firebaseapp.com",
 
-  databaseURL: "https://join-project-a437a-default-rtdb.europe-west1.firebasedatabase.app",
+  databaseURL: "https://join-f06a0-default-rtdb.europe-west1.firebasedatabase.app",
 
-  projectId: "join-project-a437a",
+  projectId: "join-f06a0",
 
-  storageBucket: "join-project-a437a.firebasestorage.app",
+  storageBucket: "join-f06a0.firebasestorage.app",
 
-  messagingSenderId: "848614889298",
+  messagingSenderId: "405201082703",
 
-  appId: "1:848614889298:web:c448e996f46de06252cc8b",
+  appId: "1:405201082703:web:6401aaf7aaebf9baafcd3a",
 
-  measurementId: "G-X4R986D1CT"
+  measurementId: "G-MEASUREMENT_ID" // Falls Sie Google Analytics verwenden
 
 };
 
